@@ -69,18 +69,41 @@
 
 #mainTitle>*
 {
-    position: absolute;
     left: calc((100vw - 400px) / 2.5);
 }
 
-#mainTitle>p
+#mainTitle>p, #mainTitle>h1
 {
-    margin-top: 200px;
+    position: absolute;
     font-size: 16px;
+    margin-top: 200px;
 }
+
+#mainTitle>a
+{
+    width : 120px;
+    height : 36px;
+    border-radius :0.5rem;
+    background-color: #FF6F0F;
+    border-color: transparent;
+    color: white;
+    font: bolder;
+    font-weight: 800;
+    text-decoration: none;
+    text-align: center; /* 텍스트를 가로로 가운데 정렬 */
+    line-height: 36px; /* 높이와 동일하게 설정해서 수직 가운데 정렬 */
+}
+
 
 @media (max-width: 400x) {
     #mainTitle > * {
       left: 0;
     }
 } 
+
+#characterImage
+{
+    width: 360px;
+    height: 480px;
+    margin-left: 350px;
+}
